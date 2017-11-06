@@ -49,14 +49,14 @@ addLocaleData(localeData);
  * @param {Object} appRootDomElement - the DOM node to attach the react
  *      application to.
  */
-// exports.renderApplication = (appRootDomElement) => {
+exports.renderApplication = (appRootDomElement) => {
     render(
         <IntlProvider locale={ locale } messages={ messages }>
             <App />
         </IntlProvider>,
-        // appRootDomElement);
-        document.getElementById('main'));
-// };
+        appRootDomElement);
+        // document.getElementById('main'));
+};
 
 
 // TODO: remove this todo and replace AppName with your application name.
