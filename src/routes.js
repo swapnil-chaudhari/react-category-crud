@@ -9,7 +9,7 @@ const Routes = ({ dispatch, history }) => (
             <Route
                 path="/"
                 component={ Category }
-                onEnter={ (nextState, replace, done) => {
+                onEnter={ (replace, done) => {
                 dispatch(enableLoadingState());
                 done();
             } }
